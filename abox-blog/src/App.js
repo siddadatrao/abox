@@ -82,7 +82,7 @@ function App() {
     },
     {
       "Title": "A Dumb Poem",
-      "Blog": "I'm excited and having fun, I'm wandering a bit confused, but I am excited and having fun.\nI like the misunderstanding between pragmatism and emotion.\nWhat else is life but doing wrong and then a reaction?\nWhat if I took a left when I was supposed to go right? Look over there, scenic route in sight.\nWe aren't making set plans in this life, that would be kind of dumb.\nWe are just supposed to be here right now, a little excited and having some fun.",
+      "Blog": "I'm excited and having fun, I'm wandering a bit confused, but I am excited and having fun.\nI like the misunderstanding between pragmatism and emotion.\nWhat else is life but doing wrong and then a reaction?\nWhat if I took a left when I was supposed to go right? Look over there, a scenic route in sight.\nWe aren't making set plans in this life, that would be kind of dumb.\nWe are just supposed to be here right now, a little excited and having some fun.",
       "References": "",
       "id": 0
     }
