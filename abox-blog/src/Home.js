@@ -1,11 +1,10 @@
-import Button from 'react-bootstrap/Button'
 import "bootstrap/dist/css/bootstrap.min.css"
-import Stack from 'react-bootstrap/Stack'
 import b1 from './b1.jpg'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useNavigate } from "react-router-dom";
+import Navbar from './NavBar'
 
 
 const site_title = {
@@ -18,24 +17,7 @@ const site_title = {
     let navigate = useNavigate();
     return (
       <>
-        <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-            <h1>a box</h1>
-        </div>
-        <Stack gap={5}>
-          
-          <Stack direction="horizontal" gap={3} style={{justifyContent: 'center'}}>
-            <Button 
-              onClick={() => {
-                navigate('/blogpage/kaushik');
-              }}
-              variant="outline-dark" size='sm'>Kaushik</Button>
-            <Button
-              onClick={() => {
-                navigate('/blogpage/sidd');
-              }}
-              variant="outline-dark" size='sm'>Sidd</Button>
-          </Stack>
-        </Stack>
+        <Navbar />
         <div className='mt-5'>
           <Container>
             <Row>
