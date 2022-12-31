@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/Col';
 
 
 
-export default function Blogpage({id, bdata}) {
+export default function Blogpage({bdata}) {
   
   const [selectedVal, setSelectedVal] = useState(0)
 
@@ -28,8 +28,8 @@ export default function Blogpage({id, bdata}) {
     (element) => {
         return (
           <>
-            <h1 
-            style={{cursor:'pointer'}}
+            <h1 className='hover-overlay'
+            style={{border: '2px solid black', borderRadius: '10px', cursor:'pointer'}}
             onClick={ () =>
               fire(element.id)
             }
@@ -53,7 +53,7 @@ export default function Blogpage({id, bdata}) {
                 {isBlogSelected && bdata.filter(bdata => bdata.id === selectedVal).map(filteredblog => (
                   <>
                     <h1>{filteredblog.Title}</h1>
-                    <p>{filteredblog.Blog}</p>
+                    <p style={{whiteSpace:'pre-wrap'}}>{filteredblog.Blog}</p>
                   </>
                 ))}
               </div>
