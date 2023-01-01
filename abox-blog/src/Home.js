@@ -34,7 +34,8 @@ const site_title = {
               
               <Col sm={6}>
                   <>
-                    <h1>{props.title}</h1>
+                    <h1>featured blog</h1>
+                    <h3>{props.title}</h3>
                     <p style={{whiteSpace:'pre-wrap', paddingRight: 10, paddingTop: 10, paddingBottom: 10,paddingLeft: 10, border: '2px solid black', borderRadius: '10px'}}>{props.blog}</p>
                   </>
                 {/* <h3 > a new gland was found</h3>
