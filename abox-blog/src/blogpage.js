@@ -29,7 +29,7 @@ export default function Blogpage({bdata}) {
         return (
           <>
             <h1 className='hover-overlay'
-            style={{border: '2px solid black', borderRadius: '10px', cursor:'pointer'}}
+            style={{paddingRight: 10, paddingLeft: 10, border: '2px solid black', borderRadius: '10px', cursor:'pointer'}}
             onClick={ () =>
               fire(element.id)
             }
@@ -53,7 +53,7 @@ export default function Blogpage({bdata}) {
                 {isBlogSelected && bdata.filter(bdata => bdata.id === selectedVal).map(filteredblog => (
                   <>
                     <h1>{filteredblog.Title}</h1>
-                    <p style={{whiteSpace:'pre-wrap'}}>{filteredblog.Blog}</p>
+                    <p style={{paddingLeft: 10, paddingRight: 10, whiteSpace:'pre-wrap', border: '2px solid black', borderRadius: '10px'}}>{filteredblog.Blog}</p>
                   </>
                 ))}
               </div>
