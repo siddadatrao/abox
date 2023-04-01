@@ -1,6 +1,7 @@
 import './App.css';
 import Home from './Home';
 import Blogpage from './blogpage';
+import React from 'react'
 
 import {
   BrowserRouter,
@@ -15,7 +16,7 @@ function App() {
       "Title": "The Controllable",
       "Blog": '*Bring* *Bring* *Bring. I am wide awake, I am happy, and I am ready to take on the day! I check the clock. As always I have 47-108 minutes to get ready and go to school. In Jelwa, everything is optimized. Pleasant, warm lights seep through every shadow at the perfect time. I wake up attentive and well rested after a completed REM cycle but with enough time to get ready for my first scheduled activity. I stick the tooth brush into my mouth, “Initiating teeth scan”. The robotic voice I nicknamed Shelly when I was three, about 10 years ago, is usually the first thing I hear in the morning. I have grown to really like Shelly’s voice. She has always been a reliable friend. “Your teeth are 43% clean!”. Based on that score and a whole plethora of measurements calculated during the scan, Shelly comes up with a plan. I follow her commands exactly. Shelly is always right, she did the analysis of course! First the right in smaller then gradually bigger circles. Then the upper/back and so on.\n\n' +
       'Next thing up, breakfast. In Jelwa, we figured out nutrition. It is really just a math equation. We learn about it in school. Your body burns a certain amount of calories. If you need to gain muscle, you have to eat more than the calories you burn in a day and workout to build muscle. To lose weight you do the opposite. Each week, food packages are delivered through the food package pipes into our fridge carefully labeled and locked with fingerprint security so that we only eat the food recommended to us.\n\n' +
-      '*Slam*. The door closes behind me. I check the clock, a perfect 22 minutes to bike to school. I wonder, how is anyone ever late? The sky is beautiful and the sun is beaming. What is life like outside of Jelwa? Are they ever late? I feel bad for people that don’t have Shelly. How do they ever brush\n\n' +
+      '*Slam*. The door closes behind me. I check the clock, a perfect 22 minutes to bike to school. I wonder, how is anyone ever late? The sky is beautiful and the sun is beaming. What is life like outside of Jelwa? Are they ever late? I feel bad for people that don’t have Shelly. How do they ever brush ' +
       'their teeth? Or know what to eat? Such a sad life. *Beep, Beep* The GPS is glaring on my bike. I hop on my electric bike. Ah! The perfect speed, 24mph. As I drive by, I wave to my old neighbor Joe. He is almost 130 years old. He is a little odd. He doesn’t follow a lot of the rules in Jelwa. He has his own garden and isn’t dressed like the rest of us. My dad says that he has special permission to not follow the rules because he’s so old and was already an adult before the Great Decline. We are never really told much about what the Great Decline really is, my dad said something about how people took control of recommendation algorithms and abused them. No one really talks about it.\n\n' +
       'Huh, weird, a book? Joe has this box sticking out of his lawn. He has always had it. At the top it reads, “Neighborhood Library”, but there’s never any books in it. I quickly stop to grab it. The title reads, “Machine Learning, Recommender Algorithms, and What Happened.” What an ominous title. The GPS beeps again reminding me to get back on my bike. When I get back on, the GPS asks me “Do you want to add this as a recurring stop?”. The thing about all of the tech in Jelwa is they are constantly trying to learn what you are doing. That’s what makes it interesting.\n\n' +
       'I park my bike into the rack at school and head to my first class: To Yourself. This class is all about relaxing your mind. As with everything else, my schedule is optimized too! My focus tests showed that I need to take this first thing in the morning. Usually I sit in one of the recliner chairs so I head over for a quick meditation. I put the headphones over my ear and the visual stimulation mask above my eyes like everyone else.\n\n' +
@@ -61,7 +62,8 @@ function App() {
       'A Note\n\n' +
       'The Controllable is a story placed 70 years in the future where recommender algorithms have been abused by the government. We are at the juncture right now before something like the Great Decline that Joe mentions happens. Apart from the echo chamber issue that I focus on in the story, we need to make recommender systems more accessible for people to understand. Companies hide their algorithms. Those who are abusing the system usually retort that users have a choice. As a society we don’t want to distance ourselves from new technology. Recommender systems can be extremely useful. For example, new research has shown an effective method for creating a collaborative filtering approach to recommending diabetes treatment. This recommender system predicted with a 61% accuracy quality recommendations (Morales 2022). However, consider the same example, let us say hospitals used a similar system to predict whether patients were treatable based on their health conditions and therefore declined care. Or if insurance companies got so good at predicting risk that they made privatized insurance unaffordable. It is up to citizens to demand transparency!',
       "References": "",
-      "id": 2
+      "id": 2,
+      "type": "blog"
     },
     {
       "Title": "NFT Intro",
@@ -78,13 +80,15 @@ function App() {
       'Update (Jul 16, 2022): Since initially writing this article I have become more exposed to the breadth of the power of NFTs. I recently watched an podcast with Mark Cuban on the Full Send Podcast and understand an interesting use case of NFTs. He explained that once a piece of traditional media is sold it is essentially lost to the owner. However, in the NFT space since all transactions are stored, once an NFT is sold it can be traced back to the original creator. This allows for an important and useful functionality. Let’s say a creator sells an NFT. This person they sell it to sells it to someone else. The creator can enforce a 10% percent royalty on every sale back to the creator. This has the potential to attack back at piracy around the world.\n'+
       'Siddhartha Adatrao',
       "References": "",
-      "id": 1
+      "id": 1,
+      "type": "blog"
     },
     {
       "Title": "A Dumb Poem",
       "Blog": "I'm excited and having fun, I'm wandering a bit confused, but I am excited and having fun.\nI like the misunderstanding between pragmatism and emotion.\nWhat else is life but doing wrong and then a reaction?\nWhat if I took a left when I was supposed to go right? Look over there, a scenic route in sight.\nWe aren't making set plans in this life, that would be kind of dumb.\nWe are just supposed to be here right now, a little excited and having some fun.",
       "References": "",
-      "id": 0
+      "id": 0,
+      "type": "blog"
     }
   ]
   const kdata = [
@@ -92,27 +96,51 @@ function App() {
       "Title": "kTitle1",
       "Blog": 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
       "References": "",
-      "id": 2
+      "id": 2,
+      "type": "blog"
     },
     {
       "Title": "kTitle2",
       "Blog": 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
       "References": "",
-      "id": 1
+      "id": 1,
+      "type": "blog"
     },
     {
       "Title": "kTitle3",
       "Blog": 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
       "References": "",
-      "id": 0
+      "id": 0,
+      "type": "blog"
+    }
+  ]
+  const kadata = [
+    {
+      "Title": "I find it interesting that...",
+      "Blog":'3/30/2023:\nTigers are orange, but they are ambush predators in usually a green environment. It works for them because their prey usually only have dichromatic vision, which means tigers do blend well with their environment in the perspective of the prey.\n\n3/29/2023:\nCold showers/baths heat up your body and hot showers/baths cools down your body. Our bodies get warmer when we wake up and cool to get ready to sleep. So maybe it’s good to cold shower in the morning and have a hot shower in the night.',
+      "References": "",
+      "id": 0,
+      "type": "blog"
+    }
+  ]
+
+  const srdata = [
+    {
+      "Title": "Flow State",
+      "Blog": 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
+      "References": "./flowstate.m4a",
+      "id": 2,
+      "type": "audio"
     }
   ]
   return (
       <BrowserRouter>
         <Routes>
-            <Route exact path="/" element={<Home title={sdata[1].Title} blog={sdata[1].Blog}/>} />
+            <Route exact path="/" element={<Home title={kadata[0].Title} blog={kadata[0].Blog}/>} />
             <Route path="/blogpage/kaushik" element={<Blogpage bdata={kdata}/>} />
             <Route path="/blogpage/sidd" element={<Blogpage bdata={sdata}/>} />
+            <Route path="/blogpage/kavin" element={<Blogpage bdata={kadata}/>} />
+            <Route path="/blogpage/sri" element={<Blogpage bdata={srdata}/>} />
         </Routes>
     </BrowserRouter>
   );

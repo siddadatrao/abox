@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button'
 import "bootstrap/dist/css/bootstrap.min.css"
 import Stack from 'react-bootstrap/Stack'
 import { useNavigate } from "react-router-dom";
+import React, {Component} from 'react'
 
 function App() {
     let navigate = useNavigate();
@@ -23,6 +24,16 @@ function App() {
                     navigate('/blogpage/sidd');
                 }}
                 variant="outline-dark" size='sm'>Sidd</Button>
+                <Button
+                onClick={() => {
+                    navigate('/blogpage/kavin');
+                }}
+                variant="outline-dark" size='sm'>Kavin</Button>
+                <Button
+                onClick={() => {
+                    navigate('/blogpage/sri');
+                }}
+                variant="outline-dark" size='sm'>Sri</Button>
             </Stack>
             </Stack>
         </>

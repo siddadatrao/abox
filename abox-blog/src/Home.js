@@ -1,10 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css"
-import b1 from './b1.jpg'
+import b1 from './resources/eye.jpg'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useNavigate } from "react-router-dom";
 import Navbar from './NavBar'
+import React, {Component} from 'react'
 
 
 const site_title = {
@@ -19,8 +20,8 @@ const site_title = {
       <>
         <Navbar />
         <div className='mt-5'>
-          <Container>
-            <Row>
+          <Container>          
+          <Row>
               
               <Col sm={6}>
                 <h3>today's picture of a box</h3>

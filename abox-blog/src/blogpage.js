@@ -4,9 +4,7 @@ import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
-
-
+import { Tweet } from 'react-twitter-widgets'
 
 export default function Blogpage({bdata}) {
   
@@ -22,7 +20,7 @@ export default function Blogpage({bdata}) {
   function fire(id) {
     setIsSelected(!isBlogSelected)
     setSelectedVal(id)
-}
+  }
 
   const listItemsClose = bdata.map(
     (element) => {
@@ -38,10 +36,28 @@ export default function Blogpage({bdata}) {
         )
     }
   )
-  return (
-      <>
-        <Navbar />
 
+  const RenderInfo = ({type, info, references}) => {
+    if (type === "blog") {
+      return (
+        <p style={{paddingLeft: 10, paddingRight: 10, whiteSpace:'pre-wrap', border: '2px solid black', borderRadius: '10px'}}>{info}</p>
+      )
+    } else if (type === "audio") {
+      return (
+        <>
+          <img src={require("./resources/eye.jpg")} 
+                    style={{
+                      paddingRight: 10, paddingTop: 10, paddingBottom: 10,paddingLeft: 10, width: '50%', alignItems: 'center', justifyContent:'center'
+                    }}/>
+          <audio src={require("./flowstate.m4a")} controls/> 
+        </>
+      )
+    }
+  }
+
+  return (
+    <>
+        <Navbar />
         <Container>
           <Row>
             <Col xs={2}></Col>
@@ -53,7 +69,7 @@ export default function Blogpage({bdata}) {
                 {isBlogSelected && bdata.filter(bdata => bdata.id === selectedVal).map(filteredblog => (
                   <>
                     <h1>{filteredblog.Title}</h1>
-                    <p style={{paddingLeft: 10, paddingRight: 10, whiteSpace:'pre-wrap', border: '2px solid black', borderRadius: '10px'}}>{filteredblog.Blog}</p>
+                    <RenderInfo type={filteredblog.type} info={filteredblog.Blog} references={filteredblog.references} />
                   </>
                 ))}
               </div>
@@ -64,8 +80,6 @@ export default function Blogpage({bdata}) {
         <div style={{padding:20, display: 'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
           {!isBlogSelected && listItemsClose}
         </div>
-        
-        
       </>
     );
   }
