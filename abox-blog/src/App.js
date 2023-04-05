@@ -117,11 +117,11 @@ function App() {
   const kadata = [
     {
       "Title": "I find it interesting that...",
-      "Blog":'3/30/2023:\nTigers are orange, but they are ambush predators in usually a green environment. It works for them because their prey usually only have dichromatic vision, which means tigers do blend well with their environment in the perspective of the prey.\n\n3/29/2023:\nCold showers/baths heat up your body and hot showers/baths cools down your body. Our bodies get warmer when we wake up and cool to get ready to sleep. So maybe it’s good to cold shower in the morning and have a hot shower in the night.',
+      "Blog":'4/2/2023:\nI find it interesting that…India is the only place to naturally have lions, bears, and tigers.\n\n3/30/2023:\nTigers are orange, but they are ambush predators in usually a green environment. It works for them because their prey usually only have dichromatic vision, which means tigers do blend well with their environment in the perspective of the prey.\n\n3/29/2023:\nCold showers/baths heat up your body and hot showers/baths cools down your body. Our bodies get warmer when we wake up and cool to get ready to sleep. So maybe it’s good to cold shower in the morning and have a hot shower in the night.',
       "References": "",
       "id": 0,
       "type": "blog"
-    }
+    },
   ]
 
   const srdata = [
