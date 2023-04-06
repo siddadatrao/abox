@@ -1,10 +1,13 @@
 import Navbar from './NavBar'
 import Button from 'react-bootstrap/Button'
 import React, { useState } from 'react';
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Tweet } from 'react-twitter-widgets'
+import ReactAudioPlayer from 'react-audio-player'
+
 
 export default function Blogpage({bdata}) {
   
@@ -43,13 +46,17 @@ export default function Blogpage({bdata}) {
         <p style={{paddingLeft: 10, paddingRight: 10, whiteSpace:'pre-wrap', border: '2px solid black', borderRadius: '10px'}}>{info}</p>
       )
     } else if (type === "audio") {
+      const a = references
       return (
         <>
-          <img src={require("./resources/eye.jpg")} 
+          <img src={require(process.env.PUBLIC_URL + "./resources/eye.jpg")} 
                     style={{
                       paddingRight: 10, paddingTop: 10, paddingBottom: 10,paddingLeft: 10, width: '50%', alignItems: 'center', justifyContent:'center'
                     }}/>
-          <audio src={require("./flowstate.m4a")} controls/> 
+          <ReactAudioPlayer
+            src={require(`` + references)}
+            autoplay
+            controls/>
         </>
       )
     }
@@ -69,7 +76,7 @@ export default function Blogpage({bdata}) {
                 {isBlogSelected && bdata.filter(bdata => bdata.id === selectedVal).map(filteredblog => (
                   <>
                     <h1>{filteredblog.Title}</h1>
-                    <RenderInfo type={filteredblog.type} info={filteredblog.Blog} references={filteredblog.references} />
+                    <RenderInfo type={filteredblog.type} info={filteredblog.Blog} references={filteredblog.References} />
                   </>
                 ))}
               </div>
