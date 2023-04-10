@@ -62,6 +62,7 @@ function App() {
       'A Note\n\n' +
       'The Controllable is a story placed 70 years in the future where recommender algorithms have been abused by the government. We are at the juncture right now before something like the Great Decline that Joe mentions happens. Apart from the echo chamber issue that I focus on in the story, we need to make recommender systems more accessible for people to understand. Companies hide their algorithms. Those who are abusing the system usually retort that users have a choice. As a society we don’t want to distance ourselves from new technology. Recommender systems can be extremely useful. For example, new research has shown an effective method for creating a collaborative filtering approach to recommending diabetes treatment. This recommender system predicted with a 61% accuracy quality recommendations (Morales 2022). However, consider the same example, let us say hospitals used a similar system to predict whether patients were treatable based on their health conditions and therefore declined care. Or if insurance companies got so good at predicting risk that they made privatized insurance unaffordable. It is up to citizens to demand transparency!',
       "References": "",
+      "Image": "",
       "id": 2,
       "type": "blog"
     },
@@ -80,6 +81,7 @@ function App() {
       'Update (Jul 16, 2022): Since initially writing this article I have become more exposed to the breadth of the power of NFTs. I recently watched an podcast with Mark Cuban on the Full Send Podcast and understand an interesting use case of NFTs. He explained that once a piece of traditional media is sold it is essentially lost to the owner. However, in the NFT space since all transactions are stored, once an NFT is sold it can be traced back to the original creator. This allows for an important and useful functionality. Let’s say a creator sells an NFT. This person they sell it to sells it to someone else. The creator can enforce a 10% percent royalty on every sale back to the creator. This has the potential to attack back at piracy around the world.\n'+
       'Siddhartha Adatrao',
       "References": "",
+      "Image": "",
       "id": 1,
       "type": "blog"
     },
@@ -87,30 +89,18 @@ function App() {
       "Title": "A Dumb Poem",
       "Blog": "I'm excited and having fun, I'm wandering a bit confused, but I am excited and having fun.\nI like the misunderstanding between pragmatism and emotion.\nWhat else is life but doing wrong and then a reaction?\nWhat if I took a left when I was supposed to go right? Look over there, a scenic route in sight.\nWe aren't making set plans in this life, that would be kind of dumb.\nWe are just supposed to be here right now, a little excited and having some fun.",
       "References": "",
+      "Image": "",
       "id": 0,
       "type": "blog"
     }
   ]
   const kdata = [
     {
-      "Title": "kTitle1",
+      "Title": "Links",
       "Blog": 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
       "References": "",
+      "Image": "",
       "id": 2,
-      "type": "blog"
-    },
-    {
-      "Title": "kTitle2",
-      "Blog": 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
-      "References": "",
-      "id": 1,
-      "type": "blog"
-    },
-    {
-      "Title": "kTitle3",
-      "Blog": 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
-      "References": "",
-      "id": 0,
       "type": "blog"
     }
   ]
@@ -119,6 +109,7 @@ function App() {
       "Title": "I find it interesting that...",
       "Blog":'4/2/2023:\nI find it interesting that…India is the only place to naturally have lions, bears, and tigers.\n\n3/30/2023:\nTigers are orange, but they are ambush predators in usually a green environment. It works for them because their prey usually only have dichromatic vision, which means tigers do blend well with their environment in the perspective of the prey.\n\n3/29/2023:\nCold showers/baths heat up your body and hot showers/baths cools down your body. Our bodies get warmer when we wake up and cool to get ready to sleep. So maybe it’s good to cold shower in the morning and have a hot shower in the night.',
       "References": "",
+      "Image": "",
       "id": 0,
       "type": "blog"
     },
@@ -129,6 +120,7 @@ function App() {
       "Title": "Flow State",
       "Blog": 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
       "References": "./srimusic/flowstate.m4a",
+      "Image": "./resources/eye.jpg",
       "id": 0,
       "type": "audio"
     }, 
@@ -136,7 +128,16 @@ function App() {
       "Title": "how?nicely",
       "Blog": 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
       "References": "./srimusic/hownicely.m4a",
+      "Image": "./resources/carmirror.jpg",
       "id": 1,
+      "type": "audio"
+    },
+    {
+      "Title": "please, excuse.m4a",
+      "Blog": 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
+      "References": "./srimusic/please,excuse.m4a",
+      "Image": "./resources/building.jpg",
+      "id": 2,
       "type": "audio"
     }
   ]

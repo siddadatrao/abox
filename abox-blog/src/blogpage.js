@@ -40,7 +40,7 @@ export default function Blogpage({bdata}) {
     }
   )
 
-  const RenderInfo = ({type, info, references}) => {
+  const RenderInfo = ({type, info, references, Image}) => {
     if (type === "blog") {
       return (
         <p style={{paddingLeft: 10, paddingRight: 10, whiteSpace:'pre-wrap', border: '2px solid black', borderRadius: '10px'}}>{info}</p>
@@ -49,7 +49,7 @@ export default function Blogpage({bdata}) {
       const a = references
       return (
         <>
-          <img src={require(process.env.PUBLIC_URL + "./resources/eye.jpg")} 
+          <img src={require(`` + Image)} 
                     style={{
                       paddingRight: 10, paddingTop: 10, paddingBottom: 10,paddingLeft: 10, width: '50%', alignItems: 'center', justifyContent:'center'
                     }}/>
@@ -76,7 +76,7 @@ export default function Blogpage({bdata}) {
                 {isBlogSelected && bdata.filter(bdata => bdata.id === selectedVal).map(filteredblog => (
                   <>
                     <h1>{filteredblog.Title}</h1>
-                    <RenderInfo type={filteredblog.type} info={filteredblog.Blog} references={filteredblog.References} />
+                    <RenderInfo type={filteredblog.type} info={filteredblog.Blog} references={filteredblog.References} Image={filteredblog.Image}/>
                   </>
                 ))}
               </div>

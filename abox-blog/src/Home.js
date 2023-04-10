@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css"
-import b1 from './resources/eye.jpg'
+import b1 from './resources/pool.jpg'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -16,7 +16,8 @@ const site_title = {
   
   export default function Home(props) {
     let navigate = useNavigate();
-    let checklist = ["Japan house","Massage","Riggs","Barrelhouse","Blind pig (trivia)","Sipyard","Downtown restaurants","Naya Indian","Laser tag/Paintball","Altgeld Underground Library","Rooftop Foellinger","Cersei hot tub","Tunnels","Illini Inn","Red Herring","Xinh xinh","Pub Cycle","Strip Club","The Literary"]
+    let checklist = ["Japan house","Massage","Riggs","Barrelhouse","Blind pig (trivia)","Sipyard","Downtown restaurants","Naya Indian","Laser tag/Paintball","Altgeld Underground Library","Rooftop Foellinger","CRCE hot tub","Tunnels","Illini Inn","Red Herring","Xinh xinh","Pub Cycle","Strip Club","The Literary"]
+    let checklist_done = []
     return (
       <>
         <Navbar />
@@ -31,7 +32,6 @@ const site_title = {
                     paddingRight: 10, paddingTop: 10, paddingBottom: 10,paddingLeft: 10, border: '2px solid black', borderRadius: '10px',
                     width: '100%'
                   }}/>
-
               </Col>
               
               <Col sm={6}>
@@ -40,8 +40,23 @@ const site_title = {
                     <h3>{props.title}</h3>
                     <p style={{whiteSpace:'pre-wrap', paddingRight: 10, paddingTop: 10, paddingBottom: 10,paddingLeft: 10, border: '2px solid black', borderRadius: '10px'}}>{props.blog}</p>
                   </>
-                {/* <h3 > a new gland was found</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p> */}
+                  <Row sm={2}>
+                    <>
+                      
+                      <div style={{whiteSpace:'pre-wrap', paddingRight: 10, paddingTop: 10, paddingBottom: 10,paddingLeft: 10, border: '2px solid black', borderRadius: '10px'}}>
+                          <h3>do</h3>
+                          <div style={{display:'flex',flexDirection:'column'}}>
+                            {checklist.map( e => <span>{e}</span>)}
+                          </div>
+                      </div>
+                      <div style={{whiteSpace:'pre-wrap', paddingRight: 10, paddingTop: 10, paddingBottom: 10,paddingLeft: 10, border: '2px solid black', borderRadius: '10px'}}>
+                          <h3>done</h3>
+                          <div style={{display:'flex',flexDirection:'column'}}>
+                            {checklist_done.map( e => <span>{e}</span>)}
+                          </div>
+                      </div>
+                    </>
+                  </Row>
               </Col>
             </Row>
             
