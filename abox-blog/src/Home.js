@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import { useNavigate } from "react-router-dom";
 import Navbar from './NavBar'
 import React, {Component} from 'react'
+import Globe from 'react-globe.gl'
 
 
 const site_title = {
@@ -18,11 +19,27 @@ const site_title = {
     let navigate = useNavigate();
     let checklist = ["Japan house","Massage","Riggs","Barrelhouse","Blind pig (trivia)","Sipyard","Downtown restaurants","Naya Indian","Laser tag/Paintball","Altgeld Underground Library","Rooftop Foellinger","CRCE hot tub","Tunnels","Illini Inn","Red Herring","Xinh xinh","Pub Cycle","Strip Club","The Literary"]
     let checklist_done = []
+
+    const N = 300;
+    const gData = [...Array(N).keys()].map(() => ({
+      lat: (Math.random() - 0.5) * 180,
+      lng: (Math.random() - 0.5) * 360,
+      size: Math.random() / 3,
+      color: ["red", "white", "blue", "green"][Math.round(Math.random() * 3)],
+    }));
+
+
     return (
       <>
         <Navbar />
         <div className='mt-5'>
-          <Container>          
+          <Container> 
+          {/* <Globe
+            globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+            pointsData={gData}
+            pointAltitude="size"
+            pointColor="color"
+          /> */}
           <Row>
               
               <Col sm={6}>
